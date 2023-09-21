@@ -1,13 +1,5 @@
 # install all the required drivers.
-
-# Mount the driver iso image
-# Mount-DiskImage D:\Driver\drivers-windows.iso
-
-# Get the mount point/drive letter, considering that the above one is the only disk mounted
-# $isoMount = (Get-DiskImage -DevicePath \\.\CDROM0  | Get-Volume).DriveLetter
-
-# Find the inf files and install
-#Get-ChildItem "$($isoMount):\" -Recurse -Include *.inf | ForEach-Object {
+# please run enable test mode first, and after reboot use this script.
 
 ## Copy folder winx64 or all inside them, to C:/drivers
 Get-ChildItem "C:\drivers\" -Recurse -Include *.inf | ForEach-Object {
