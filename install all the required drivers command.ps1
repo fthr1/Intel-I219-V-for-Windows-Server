@@ -1,4 +1,4 @@
-install all the required drivers.
+# install all the required drivers.
 
 # Mount the driver iso image
 Mount-DiskImage D:\Driver\drivers-windows.iso
